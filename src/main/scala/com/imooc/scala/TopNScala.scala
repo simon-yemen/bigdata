@@ -51,8 +51,8 @@ object TopNScala {
     val sc = new SparkContext(conf)
 
     //1：首先获取两份数据中的核心字段，使用fastjson包解析数据
-    val videoInfoRDD = sc.textFile("D:\\video_info.log")
-    val giftRecordRDD = sc.textFile("D:\\gift_record.log")
+    val videoInfoRDD = sc.textFile("/Users/simon/test_file/video_info.log")
+    val giftRecordRDD = sc.textFile("/Users/simon/test_file/gift_record.log")
 
     //(vid,(uid,area))
     val videoInfoFieldRDD = videoInfoRDD.map(line=>{

@@ -5,6 +5,7 @@ import org.apache.spark.{SparkConf, SparkContext}
 
 /**
  * 需求：Kryo序列化的使用
+ * 使用kryo序列化可以不对对象进行注册，但是序列化后的数据量会任然很大，介于java原生序列化和kryo注册对象方式之间
  * Created by xuwei
  */
 object KryoSerScala {
